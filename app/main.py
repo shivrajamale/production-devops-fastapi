@@ -1,12 +1,15 @@
 from fastapi import FastAPI
 
+from app.config.config import APP_NAME
+from app.config.config import APP_VERSION
+
 from app.routers import health
 from app.routers import version
 from app.routers import users
 
 app = FastAPI(
-    title="Production DevOps FastAPI",
-    version="1.0.0"
+    title=APP_NAME,
+    version=APP_VERSION
 )
 
 @app.get("/")
