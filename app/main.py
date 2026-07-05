@@ -1,8 +1,13 @@
 from fastapi import FastAPI
 
-# Create FastAPI application
-app = FastAPI()
+from app.routers import health
+from app.routers import version
+from app.routers import users
 
+app = FastAPI(
+    title="Production DevOps FastAPI",
+    version="1.0.0"
+)
 
 @app.get("/")
 def home():
@@ -10,16 +15,6 @@ def home():
         "message": "Welcome to Production DevOps Project 🚀"
     }
 
-
-@app.get("/health")
-def health():
-    return {
-        "status": "healthy"
-    }
-
-
-@app.get("/version")
-def version():
-    return {
-        "version": "1.0.0"
-    }
+app.include_router(health.router)
+app.include_router(version.router)
+app.include_router(users.router)
