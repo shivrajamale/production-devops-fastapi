@@ -340,7 +340,7 @@ Cloud & DevOps Engineer
 ### Connect
 
 - GitHub: https://github.com/shivrajamale
-- LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/
+- LinkedIn: https://www.linkedin.com/in/shivrajamale/
 
 ---
 
