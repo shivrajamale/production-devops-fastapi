@@ -169,16 +169,6 @@ Users
 
 ---
 
-# 🌐 Live Demo
-
-Replace with your AWS Load Balancer DNS:
-
-```text
-http://YOUR-AWS-LOAD-BALANCER-DNS
-```
-
----
-
 # 📸 Project Screenshots
 
 ## ☁ Amazon EKS Cluster
@@ -190,6 +180,12 @@ http://YOUR-AWS-LOAD-BALANCER-DNS
 ## ☸ Kubernetes Worker Nodes
 
 ![](screenshots/03-worker-nodes.png)
+
+---
+
+## 🖥 Kubernetes Nodes
+
+![](screenshots/04-kubectl-get-nodes.png)
 
 ---
 
@@ -253,11 +249,21 @@ http://YOUR-AWS-LOAD-BALANCER-DNS
 
 ---
 
+## 📜 Rollout History
+
+![](screenshots/15-rollout-history.png)
+
+---
+
 ## ⏪ Rollback
 
 ![](screenshots/16-rollback.png)
 
 ---
+
+## ✅ Final Application Running
+
+![](screenshots/17-final-fastapi-running.png)
 
 # 🔄 Rolling Update
 
