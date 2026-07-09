@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: shivrajamale/fastapi-app
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 8000
+
+containerPort: 8000

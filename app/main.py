@@ -15,11 +15,13 @@ app = FastAPI(
 
 logger.info("Production DevOps FastAPI application started")
 
+
 @app.get("/")
 def home():
     return {
         "message": "Welcome to Production DevOps Project 🚀"
     }
+
 
 app.include_router(health.router)
 app.include_router(version.router)
